@@ -15,6 +15,12 @@ main {
 p {
   font-size: 18px;
 }
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 20px;
+}
 section div {
   border-radius: 15px;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -63,14 +69,44 @@ section div img {
   }
   main {
     grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: auto auto auto auto; */
+    /* grid-template-areas:
+      "header header header "
+      "box1 box2 box3"
+      "box4 box5 box6"
+      "box7 box8 box9"; */
   }
   .third-grid {
-    grid-row: span 4;
+    grid-row: span 2;
   }
   .first-grid {
-    grid-row: span 2;
+    grid-row: span 2 !important;
   }
   .eigth-grid {
     flex-direction: row;
   }
+  /* .first-grid {
+    grid-area: box1;
+  }
+  .second-grid {
+    grid-area: box2;
+  }
+  .third-grid {
+    grid-area: box3;
+  }
+  .fourth-grid {
+    grid-area: box4;
+  }
+  .fifth-grid {
+    grid-area: box5;
+  }
+  .sixth-grid {
+    grid-area: box6;
+  }
+  .seventh-grid {
+    grid-area: box7;
+  }
+  .eigth-grid {
+    grid-area: box8;
+  } */
 }
